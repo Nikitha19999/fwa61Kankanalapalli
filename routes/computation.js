@@ -11,7 +11,7 @@ router.get('/', function (req, res, next) {
         value = search_params.get("x");
         if(value === null)
         {
-            value=Math.round(Math.random()*900);
+            value = Math.round(Math.random()*900);
         }
         console.log(value);
         res.writeHead(200, { 'Content-Type': 'text/html' });
